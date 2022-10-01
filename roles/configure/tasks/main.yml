@@ -1,3 +1,6 @@
+- name: Terminal
+  import_tasks: terminal.yml
+
 - name: Folders
   import_tasks: folders.yml
 
