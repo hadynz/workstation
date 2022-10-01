@@ -1,3 +1,9 @@
+- name: Folders
+  import_tasks: folders.yml
+
+- name: Obsidian
+  import_tasks: obsidian.yml
+
 - name: Zsh
   import_tasks: zsh.yml
 

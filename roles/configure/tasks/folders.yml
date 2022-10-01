@@ -1,0 +1,9 @@
+- name: Create development directories
+  file:
+    path: "{{ item }}"
+    state: directory
+  loop:
+    - "$HOME/Development"
+    - "$HOME/Development/Personal"
+    - "$HOME/Development/Scratch"
+    - "$HOME/Development/Obsidian/Dev/.obsidian/plugins"

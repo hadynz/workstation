@@ -41,6 +41,7 @@ setopt share_history
 
 ## Shortcuts
 alias dev="cd $HOME/Development"
+alias obsidian="cd $HOME/Development/Obsidian/Dev/.obsidian/plugins"
 
 ## Commands
 alias ll="ls -la"
