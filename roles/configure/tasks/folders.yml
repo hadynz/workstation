@@ -3,6 +3,7 @@
     path: "{{ item }}"
     state: directory
   loop:
+    - "~/.nvm"
     - "$HOME/Development"
     - "$HOME/Development/Personal"
     - "$HOME/Development/Scratch"

@@ -1,6 +1,9 @@
 - name: Folders
   import_tasks: folders.yml
 
+- name: Node
+  import_tasks: node.yml
+
 - name: Obsidian
   import_tasks: obsidian.yml
 

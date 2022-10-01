@@ -1,0 +1,9 @@
+- name: Install NPM
+  community.general.homebrew:
+    name: npm
+    state: latest
+
+- name: Install NVM
+  community.general.homebrew:
+    name: nvm
+    state: latest

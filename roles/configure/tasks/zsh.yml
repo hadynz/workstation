@@ -2,7 +2,6 @@
   community.general.homebrew:
     name: zsh
     state: latest
-  become: false
 
 - name: Install oh my zsh
   git:
