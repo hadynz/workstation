@@ -1,0 +1,13 @@
+- name: Install Apps
+  community.general.homebrew_cask:
+    name: "{{ item }}"
+  ignore_errors: yes
+  loop:
+    - google-chrome
+    - slack
+    - visual-studio-code
+    - obsidian
+    - raycast
+    - things
+    - bitwarden
+    
