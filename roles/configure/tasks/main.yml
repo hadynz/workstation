@@ -1,0 +1,5 @@
+- name: Zsh
+  import_tasks: zsh.yml
+
+- name: Git
+  import_tasks: git.yml

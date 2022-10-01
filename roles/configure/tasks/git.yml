@@ -1,0 +1,10 @@
+- name: Install git package
+  community.general.homebrew:
+    name: git
+    state: latest
+
+- name: Create git config
+  copy:
+    src: git/gitconfig
+    dest: ~/.gitconfig
+    mode: 0644
