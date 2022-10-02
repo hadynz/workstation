@@ -1,8 +1,6 @@
-# workstation
+# OS X Workstation Setup
 
-![Mac Build Logo](images/macbuild-logo.png)
-
-Artwork courtesy of [Apple](http://www.apple.com/)
+<img alt="macbuild-logo" src="https://user-images.githubusercontent.com/315585/193447604-86438b2a-260a-4f31-be22-042840dc776e.png">
 
 ## Introduction
 
