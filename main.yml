@@ -1,5 +1,7 @@
 - hosts: localhost
   connection: local
   roles:
-    - dev
-    - osx
+    - role: dev
+      tags: dev
+    - role: osx
+      tags: osx

@@ -22,8 +22,12 @@ git clone git@github.com:hadynz/workstation.git
 ### Run
 
 ```bash
-cd workstation
-
-# Run using Makefile
+# Run all
 make
+
+# Run dev tasks only
+make dev
+
+# Run osx tasks only
+make osx
 ```

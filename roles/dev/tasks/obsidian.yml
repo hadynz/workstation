@@ -1,4 +1,4 @@
 - name: Install Kindle Highlights plugin
   git:
     repo: https://github.com/hadynz/obsidian-kindle-plugin.git
-    dest: "$HOME/Development/Obsidian/Dev/.obsidian/plugins/obsidian-kindle-highlights"
+    dest: "$HOME/Development/Obsidian/Dev/.obsidian/plugins/obsidian-kindle-plugin"
