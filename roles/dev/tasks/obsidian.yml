@@ -1,4 +1,5 @@
+---
 - name: Install Kindle Highlights plugin
-  git:
+  ansible.builtin.git:
     repo: https://github.com/hadynz/obsidian-kindle-plugin.git
     dest: "$HOME/Development/Obsidian/Dev/.obsidian/plugins/obsidian-kindle-plugin"

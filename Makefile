@@ -6,3 +6,8 @@ dev:
 
 osx:
 	ansible-playbook -i hosts main.yml --tags "osx"
+
+lint:
+	echo -e '#!/bin/bash\nmake lint' > .git/hooks/pre-commit
+	chmod +x .git/hooks/pre-commit
+	ansible-lint

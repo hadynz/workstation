@@ -1,3 +1,4 @@
+---
 - name: Install NPM
   community.general.homebrew:
     name: npm

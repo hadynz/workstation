@@ -16,12 +16,16 @@ The purpose of this project is to automate the setup of a new Mac OS X workstati
 
 ### Install Ansible
 
-```bash
-# install brew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+Install Homebrew
 
-# install ansible
-brew install ansible
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```
+
+Install Ansible and Ansible lint 
+
+```bash
+brew install ansible ansible-lint
 ```
 
 ### Clone this repo

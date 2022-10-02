@@ -1,7 +1,9 @@
+---
 - name: Create development directories
-  file:
+  ansible.builtin.file:
     path: "{{ item }}"
     state: directory
+    mode: 0755
   loop:
     - "~/.nvm"
     - "$HOME/Development"

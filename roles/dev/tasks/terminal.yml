@@ -1,5 +1,19 @@
+---
+- name: Read Terminal profile name (Default Settings)
+  ansible.builtin.command: "defaults read com.apple.terminal 'Default Window Settings'"
+  register: result_default
+  changed_when: result_default.rc != 0
+  failed_when: result_default.rc != 0
+
+- name: Read Terminal profile name (Startup Settings)
+  ansible.builtin.command: "defaults read com.apple.terminal 'Startup Window Settings'"
+  register: result_startup
+  changed_when: result_startup.rc != 0
+  failed_when: result_startup.rc != 0
+
 - name: Set Mac's Terminal profile to Pro by default
-  shell: "{{ item }}"
+  ansible.builtin.command: "{{ item }}"
   with_items:
     - defaults write com.apple.terminal 'Default Window Settings' -string Pro
     - defaults write com.apple.terminal 'Startup Window Settings' -string Pro
+  when: result_default.stdout != "Pro" or result_startup.stdout != "Pro"
