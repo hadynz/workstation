@@ -16,3 +16,6 @@
 
 - name: Git
   import_tasks: git.yml
+
+- name: Command Line Tools
+  import_tasks: cli.yml
