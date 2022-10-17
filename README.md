@@ -45,6 +45,15 @@ make dev
 make osx
 ```
 
+## Keychron K2 configuration
+
+When using Keychron K2 keyboard, a manual setup is required after connecting it via Bluetooth to
+the Mac:
+
+1. Open System Preferences > Keyboard > Modifier Keys > Keychron K2
+2. Map **Option (⌥) key**  to **Command (⌘) key**
+3. Map **Command (⌘) key** to **Option (⌥) key**
+
 ## References
 
 ### Projects

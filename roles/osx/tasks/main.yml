@@ -1,3 +1,6 @@
 ---
+- name: Keychron
+  import_tasks: keychron.yml
+
 - name: Apps
   import_tasks: apps.yml
