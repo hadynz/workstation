@@ -1,0 +1,29 @@
+- name: Autohide the Dock
+  shell: defaults write com.apple.dock "autohide" -bool "true"
+
+- name: Remove all items from the Dock
+  shell: "/usr/local/bin/dockutil --remove all --no-restart"
+
+- name: Set the default Dock items
+  shell: "/usr/local/bin/dockutil --add {{ item }} --no-restart"
+  with_items:
+    - "\"/Applications/System Preferences.app\""
+    - /System/Applications/Messages.app 
+    - "\"/System/Applications/Utilities/Activity Monitor.app\""
+    - "\"/Applications/Google Chrome.app\""
+    - "~/Downloads --section others"
+
+- name: Resize the size of the Dock tiles
+  shell: defaults write com.apple.dock tilesize -int 40
+
+- name: Show the Status Bar in Finder
+  shell: defaults write com.apple.finder ShowStatusBar -bool true
+
+- name: Show the Path Bar in Finder
+  shell: defaults write com.apple.finder ShowPathbar -bool true
+
+- name: Restart Dock
+  shell: killall Dock
+
+- name: Restart Finder
+  shell: killall Finder

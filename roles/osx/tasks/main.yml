@@ -1,4 +1,7 @@
 ---
+- name: Base OSX configuration
+  import_tasks: osx.yml
+
 - name: Keychron
   import_tasks: keychron.yml
 
