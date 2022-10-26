@@ -8,3 +8,13 @@
   community.general.homebrew:
     name: nvm
     state: latest
+
+- name: Install Yarn
+  community.general.homebrew:
+    name: yarn
+    state: latest
+
+- name: Install NVM
+  community.general.homebrew:
+    name: nvm
+    state: latest
