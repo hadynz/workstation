@@ -44,7 +44,6 @@ alias dev="cd $HOME/Development"
 alias obsidian="cd $HOME/Development/Obsidian/Dev/.obsidian/plugins"
 alias docs="cd $HOME/Documents"
 alias atlassian="cd $HOME/Development/Atlassian"
-alias atlas="cd $HOME/Development/Atlassian"
 
 ## Commands
 alias ll="ls -la"
