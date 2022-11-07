@@ -7,7 +7,7 @@
 - name: Set the default Dock items
   shell: "/usr/local/bin/dockutil --add {{ item }} --no-restart"
   with_items:
-    - "\"/Applications/System Preferences.app\""
+    - "\"/System/Applications/System Settings.app\""
     - /System/Applications/Messages.app 
     - "\"/System/Applications/Utilities/Activity Monitor.app\""
     - "\"/Applications/Google Chrome.app\""

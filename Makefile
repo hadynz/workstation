@@ -5,7 +5,7 @@ dev:
 	ansible-playbook -i hosts main.yml --tags "dev"
 
 osx:
-	ansible-playbook -i hosts main.yml --tags "osx"
+	ansible-playbook -i hosts main.yml --tags "osx" --ask-become-pass
 
 lint:
 	echo -e '#!/bin/bash\nmake lint' > .git/hooks/pre-commit

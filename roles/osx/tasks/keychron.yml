@@ -3,11 +3,8 @@
   ansible.builtin.copy:
     src: keychron/com.keychron.keyremapping.plist
     dest: ~/Library/LaunchAgents
-    group: wheel
   register: keychron_remapping_script
-  become: yes
 
 - name: Load Keychron remapping Mac script
   ansible.builtin.command: launchctl load ~/Library/LaunchAgents/com.keychron.keyremapping.plist
   when: keychron_remapping_script.changed
-  become: yes

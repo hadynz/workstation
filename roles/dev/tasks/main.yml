@@ -11,11 +11,11 @@
 - name: Obsidian
   import_tasks: obsidian.yml
 
-- name: Zsh
-  import_tasks: zsh.yml
-
 - name: Git
   import_tasks: git.yml
 
 - name: Command Line Tools
   import_tasks: cli.yml
+
+- name: Zsh
+  import_tasks: zsh.yml
